@@ -22,15 +22,15 @@ export default function Services() {
     },
   ];
   return (
-    <div className="w-full mt-8 py-12">
-      <h1 className="text-center text-6xl font-bold text-white">
+    <div className="w-full py-20">
+      <h1 className="text-center lg:text-6xl text-4xl font-bold text-white">
         My <span className="text-[#EB5B00] ">Services</span>
       </h1>
-      <div className="w-full flex justify-center items-center gap-10 mt-16">
+      <div className="w-full flex flex-wrap justify-center items-center gap-10 mt-16">
         {data.map((item, index) => (
           <div
             key={index}
-            className="w-[25%] bg-[#640D5F]  rounded-3xl p-10 shadow-[0px_0px_10px_rgba(235,91,0,0.7)] hover:-translate-y-3 transition-all duration-700"
+            className="lg:w-[25%] w-[80%] bg-[#640D5F] rounded-3xl p-10 shadow-[0px_0px_10px_rgba(235,91,0,0.7)] hover:-translate-y-3 transition-all duration-700"
           >
             <div>
               <i className={`${item.icon} text-5xl text-[#EB5B00]`}></i>

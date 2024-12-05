@@ -4,14 +4,10 @@ import myImage from "/myImage.png";
 
 export default function Home() {
   return (
-    <div className="w-full">
-      <div className="max-w-screen-xl flex flex-col lg:flex-row-reverse lg:justify-around gap-10 items-center py-10 mx-auto">
+    <div className="w-full py-20">
+      <div className="max-w-screen-xl flex flex-col lg:flex-row-reverse lg:justify-around gap-10 items-center  mx-auto">
         <div className="lg:w-[30%] w-[80%] rounded-full overflow-hidden">
-          <img
-            src={myImage}
-            alt=""
-            className="w-full object-cover"
-          />
+          <img src={myImage} alt="" className="w-full object-cover" />
         </div>
         <div className="text-white lg:w-1/2 w-full px-6 flex flex-col lg:items-start items-center">
           <h2 className="lg:text-3xl text-xl font-bold">Hi, My Name is</h2>

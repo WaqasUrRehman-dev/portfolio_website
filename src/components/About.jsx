@@ -3,8 +3,8 @@ import myImage from '/myImage.png'
 
 export default function About() {
   return (
-    <div className="w-full mt-10">
-      <div className="max-w-screen-xl flex flex-col lg:flex-row lg:justify-around gap-10 items-center py-8 mx-auto">
+    <div className="w-full py-20">
+      <div className="max-w-screen-xl flex flex-col lg:flex-row lg:justify-around gap-10 items-center  mx-auto">
         <div className="lg:w-[30%] w-[80%] rounded-full overflow-hidden">
           <img src={myImage} alt="" className="w-full object-cover" />
         </div>
