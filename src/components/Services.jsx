@@ -41,7 +41,7 @@ export default function Services() {
             <p className="text-white mt-6 text-sm font-semibold">
               {item.description}
             </p>
-            <button className="bg-[#EB5B00] px-4 py-1 rounded-full mt-6 shadow-[0px_0px_20px_rgba(235,91,0,0.7)] ">
+            <button className="bg-[#EB5B00] px-4 py-1 rounded-full mt-6 shadow-[0px_0px_20px_rgba(235,91,0,0.7)]">
               leran more
             </button>
           </div>

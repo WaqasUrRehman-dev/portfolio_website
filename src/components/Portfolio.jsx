@@ -31,23 +31,23 @@ export default function Portfolio() {
     },
     {
       image: project4,
-      title: "Saylani Registration App",
+      title: "Zeenexers App",
       description:
-        "Qutor offers online Quran classes for kids and adults, taught by experienced tutors. With interactive lessons, a user-friendly interface, and no credit card required for a free trial, it's a seamless way to learn Quran online.",
+        "In this project I have just adding something and this is not my project. At ZeeNexers we are dedicated to providing you with a seamless and enjoyable shopping experience. As a leading e-commerce platform in Pakistan, we offer a diverse range of high-quality products delivered right to your doorstep.",
       link: "https://zeenexers.vercel.app/",
     },
     {
       image: project5,
-      title: "Saylani Registration App",
+      title: "Landing Page",
       description:
-        "Qutor offers online Quran classes for kids and adults, taught by experienced tutors. With interactive lessons, a user-friendly interface, and no credit card required for a free trial, it's a seamless way to learn Quran online.",
+        "This project showcases a minimalist design with a clean layout and vibrant visuals. The left section focuses on typography and a call-to-action, while the right side is a feast for the eyes with bold, fruit-inspired imagery.",
       link: "https://github.com/WaqasUrRehman-dev/Landing-Page",
     },
     {
       image: project6,
-      title: "Saylani Registration App",
+      title: "Landing Page",
       description:
-        "Qutor offers online Quran classes for kids and adults, taught by experienced tutors. With interactive lessons, a user-friendly interface, and no credit card required for a free trial, it's a seamless way to learn Quran online.",
+        "This landing page features a modern and artistic design with bold typography arranged diagonally for a dynamic visual effect. The layout combines earthy tones and vibrant green, with a portrait photograph on the right, adding a personal touch. The text emphasizes a creative project titled Nature Morte for Harpers, suggesting a focus on fashion, art, or editorial content.",
       link: "https://sylani-registration-form.vercel.app/",
     },
   ];
@@ -58,9 +58,11 @@ export default function Portfolio() {
         Latest <span className="text-[#EB5B00] ">Projects</span>
       </h1>
       <div className="cards flex justify-between px-10 items-center flex-wrap gap-y-6 mt-16">
-
         {data.map((item, index) => (
-          <div key={index} className="card lg:w-[32%] h-[50vh] bg-gray-400 cursor-pointer rounded-xl overflow-hidden relative group">
+          <div
+            key={index}
+            className="card lg:w-[32%] h-[50vh] bg-gray-400 cursor-pointer rounded-xl overflow-hidden relative group"
+          >
             <img
               src={item.image}
               className="w-full h-full lg:object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -68,9 +70,7 @@ export default function Portfolio() {
             />
             <div className="w-full h-0 bg-gradient-to-t to-[#d91657dc] from-[#eb5a00d5] absolute left-0 -bottom-36 flex flex-col justify-center items-center text-center px-5 transition-all duration-500 group-hover:h-full group-hover:bottom-0">
               <h1 className="text-xl font-semibold mb-4 ">{item.title}</h1>
-              <p className="font-semibold">
-                "{item.description}"
-              </p>
+              <p className="font-semibold">"{item.description}"</p>
               <a
                 href={item.link}
                 target="_blank"

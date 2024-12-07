@@ -21,6 +21,7 @@ export default function Navbar() {
         <div className="text-white text-lg lg:flex gap-6 font-semibold">
           {data.map((n, i) => (
             <a
+            key={i}
               href=""
               className={`${
                 i === 0 ? "text-[#EB5B00]" : "hover:text-[#EB5B00]"
@@ -43,6 +44,7 @@ export default function Navbar() {
           <div className="text-white text-lg flex flex-col gap-4 pl-4 font-semibold">
             {data.map((n, i) => (
               <a
+              key={i}
                 href=""
                 className={`${
                   i === 0 ? "text-[#EB5B00]" : "hover:text-[#EB5B00]"
