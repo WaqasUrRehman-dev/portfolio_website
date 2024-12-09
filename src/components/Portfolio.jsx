@@ -33,7 +33,7 @@ export default function Portfolio() {
       image: project4,
       title: "Zeenexers App",
       description:
-        "In this project I have just adding something and this is not my project. At ZeeNexers we are dedicated to providing you with a seamless and enjoyable shopping experience. As a leading e-commerce platform in Pakistan, we offer a diverse range of high-quality products delivered right to your doorstep.",
+        "In this project I have just adding something and this is not my project. At ZeeNexers we are dedicated to providing you with a seamless and enjoyable shopping experience. As a leading e-commerce platform in Pakistan.",
       link: "https://zeenexers.vercel.app/",
     },
     {
@@ -47,7 +47,7 @@ export default function Portfolio() {
       image: project6,
       title: "Landing Page",
       description:
-        "This landing page features a modern and artistic design with bold typography arranged diagonally for a dynamic visual effect. The layout combines earthy tones and vibrant green, with a portrait photograph on the right, adding a personal touch. The text emphasizes a creative project titled Nature Morte for Harpers, suggesting a focus on fashion, art, or editorial content.",
+        "This landing page features a modern and artistic design with bold typography arranged diagonally for a dynamic visual effect. The layout combines earthy tones and vibrant green, with a portrait photograph on the right.",
       link: "https://sylani-registration-form.vercel.app/",
     },
   ];

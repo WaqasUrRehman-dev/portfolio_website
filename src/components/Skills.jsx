@@ -1,5 +1,7 @@
 import React from 'react'
-
+import certificate1 from "/certificate1.png";
+import certificate2 from "/certificate2.png";
+import certificate3 from "/certificate3.png";
 export default function Skills() {
     const data = [
       {
@@ -36,7 +38,7 @@ export default function Skills() {
       },
     ];
   return (
-    <div className="w-full pt-20">
+    <div className="w-full py-20">
       <h1 className="text-center lg:text-6xl text-4xl font-bold text-white">
         My <span className="text-[#EB5B00] ">Skills</span>
       </h1>
@@ -49,6 +51,32 @@ export default function Skills() {
             <h1 className="lg:text-3xl font-bold text-white">{item.title}</h1>
           </div>
         ))}
+      </div>
+      <h1 className="text-center lg:text-6xl text-4xl font-bold text-white mt-6">
+        Certificates
+      </h1>
+      <div className="flex justify-between px-10 items-center flex-wrap gap-y-6 mt-16">
+        <div className="lg:w-[32%] h-[50vh] rounded-xl overflow-hidden">
+          <img
+            src={certificate1}
+            alt="certificate1"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="lg:w-[32%] h-[50vh] rounded-xl overflow-hidden">
+          <img
+            src={certificate2}
+            alt="certificate1"
+            className="w-full h-full object-center"
+          />
+        </div>
+        <div className="lg:w-[32%] h-[50vh] rounded-xl overflow-hidden">
+          <img
+            src={certificate3}
+            alt="certificate1"
+            className="w-full h-full object-center"
+          />
+        </div>
       </div>
     </div>
   );

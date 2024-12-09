@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import logo from "/logo.png";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [toggle, settoggle] = useState(false);
+  const location = useLocation();
+  console.log(location);
   const data = [
-    { id: "home", name: "Home" },
-    { id: "about", name: "About" },
-    { id: "services", name: "Services" },
-    { id: "skills", name: "Skills" },
-    { id: "portfolio", name: "Portfolio" },
-    { id: "contact", name: "Contact" },
+    { id: "/", name: "Home" },
+    { id: "/about", name: "About" },
+    { id: "/services", name: "Services" },
+    { id: "/skills", name: "Skills" },
+    { id: "/portfolio", name: "Portfolio" },
+    { id: "/contact", name: "Contact" },
   ];
+  const isActive = (id) => {
+    return location.pathname === id;
+  };
   return (
     <div className="w-full bg-[#331031]">
       {/* dekstop menu */}
@@ -20,15 +26,15 @@ export default function Navbar() {
         </div>
         <div className="text-white text-lg lg:flex gap-6 font-semibold">
           {data.map((n, i) => (
-            <a
-            key={i}
-              href=""
+            <Link
+              key={i}
+              to={`${n.id}`}
               className={`${
-                i === 0 ? "text-[#EB5B00]" : "hover:text-[#EB5B00]"
+                isActive(n.id) ? "text-[#EB5B00]" : "hover:text-[#EB5B00]"
               }`}
             >
               {n.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -41,17 +47,20 @@ export default function Navbar() {
           >
             <i class="ri-close-fill"></i>
           </button>
-          <div className="text-white text-lg flex flex-col gap-4 pl-4 font-semibold">
+          <div className="text-white text-lg flex flex-col gap-4 pl-4 font-semibold pt-6">
             {data.map((n, i) => (
-              <a
-              key={i}
-                href=""
+              <Link
+                key={i}
+                to={`${n.id}`}
                 className={`${
-                  i === 0 ? "text-[#EB5B00]" : "hover:text-[#EB5B00]"
+                  isActive(n.id) || (location.pathname === "/" && i === 0)
+                    ? "text-[#EB5B00]"
+                    : "hover:text-[#EB5B00]"
                 }`}
+                onClick={() => settoggle(false)}
               >
                 {n.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

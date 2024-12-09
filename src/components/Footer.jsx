@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -17,24 +18,25 @@ export default function Footer() {
         </div>
         <div className="text-white flex flex-col lg:items-start items-center gap-1 lg:mt-0 mt-6">
           <h1 className="text-lg font-bold mb-2">Quick Links</h1>
-          <a href="" className="hover:text-[#EB5B00]">
+          {/* fetch links */}
+          <Link to="/" className="hover:text-[#EB5B00]">
             Home
-          </a>
-          <a href="" className="hover:text-[#EB5B00]">
+          </Link>
+          <Link to="/about" className="hover:text-[#EB5B00]">
             About
-          </a>
-          <a href="" className="hover:text-[#EB5B00]">
+          </Link>
+          <Link to="/services" className="hover:text-[#EB5B00]">
             Services
-          </a>
-          <a href="" className="hover:text-[#EB5B00]">
+          </Link>
+          <Link to="/skills" className="hover:text-[#EB5B00]">
             Skills
-          </a>
-          <a href="" className="hover:text-[#EB5B00]">
+          </Link>
+          <Link to="/portfolio" className="hover:text-[#EB5B00]">
             Portfolio
-          </a>
-          <a href="" className="hover:text-[#EB5B00]">
+          </Link>
+          <Link to="/contact" className="hover:text-[#EB5B00]">
             Contact
-          </a>
+          </Link>
         </div>
         <div className="text-white">
           <h1 className="text-lg font-bold lg:text-start text-center lg:mt-0 mt-6">
@@ -50,19 +52,23 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6 mt-10 text-xl text-[#EB5B00] justify-center lg:justify-start">
             <a
-              href=""
+              href="https://www.linkedin.com/in/waqasurrehman-dev/"
+              target="_blank"
               className="w-10 h-10 border-2 border-[#EB5B00] flex justify-center items-center rounded-full hover:bg-[#EB5B00] hover:text-white hover:shadow-[0px_0px_20px_rgba(235,91,0,0.7)]"
             >
               <i class="ri-linkedin-fill"></i>
             </a>
             <a
-              href=""
+              href="https://github.com/WaqasUrRehman-dev"
+              target="_blank"
               className="w-10 h-10 border-2 border-[#EB5B00] flex justify-center items-center rounded-full hover:bg-[#EB5B00] hover:text-white hover:shadow-[0px_0px_20px_rgba(235,91,0,0.7)]"
             >
               <i class="ri-github-fill"></i>
             </a>
             <a
-              href=""
+              href="https://wa.me/923152958257?text=Hello%20Thank%20you%20for%20reaching%20out.%20How%20can%20I%20assist%20you%20today?" // Replace with your WhatsApp number
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 border-2 border-[#EB5B00] flex justify-center items-center rounded-full hover:bg-[#EB5B00] hover:text-white hover:shadow-[0px_0px_20px_rgba(235,91,0,0.7)]"
             >
               <i class="ri-whatsapp-line"></i>
@@ -70,8 +76,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#1A1A1A] text-white text-center py-4">
-        <p>© 2021 Waqas Ur Rehman. All Rights Reserved.</p>
+      <div className="w-full bg-[#1A1A1A] text-white lg:text-base text-sm text-center py-4">
+        <p>© 2024 Waqas Ur Rehman. All Rights Reserved.</p>
       </div>
     </div>
   );
