@@ -3,7 +3,6 @@ import certificate1 from "/certificate1.png";
 import certificate2 from "/certificate2.png";
 import certificate3 from "/certificate3.png";
 export default function Skills() {
-  document.title = "Portfolio | Skills";
   const data = [
     {
       icon: "ri-html5-line",

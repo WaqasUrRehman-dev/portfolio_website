@@ -2,7 +2,6 @@ import React from "react";
 import myImage from "/myImage.png";
 
 export default function About() {
-  document.title = "Portfolio | About";
   return (
     <div className="w-full py-20">
       <div className="max-w-screen-xl flex flex-col lg:flex-row lg:justify-around gap-10 items-center  mx-auto">

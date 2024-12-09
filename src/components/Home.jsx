@@ -7,7 +7,6 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 
 export default function Home() {
-  document.title = "Portfolio | Home";
   return (
     <>
       <Header />
