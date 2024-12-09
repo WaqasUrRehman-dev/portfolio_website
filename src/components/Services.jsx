@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Services() {
+  document.title = "Portfolio | Services";
   const data = [
     {
       icon: "ri-tools-fill",

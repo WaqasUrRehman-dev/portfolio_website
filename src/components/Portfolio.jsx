@@ -7,6 +7,7 @@ import project5 from "/project5.png";
 import project6 from "/project6.png";
 
 export default function Portfolio() {
+  document.title = "Portfolio | Portfolio";
   const data = [
     {
       image: project1,

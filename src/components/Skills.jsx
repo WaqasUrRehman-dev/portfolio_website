@@ -1,42 +1,43 @@
-import React from 'react'
+import React from "react";
 import certificate1 from "/certificate1.png";
 import certificate2 from "/certificate2.png";
 import certificate3 from "/certificate3.png";
 export default function Skills() {
-    const data = [
-      {
-        icon: "ri-html5-line",
-        title: "HTML5",
-      },
-      {
-        icon: "ri-css3-line",
-        title: "CSS3",
-      },
-      {
-        icon: "ri-javascript-line",
-        title: "Javascipt",
-      },
-      {
-        icon: "ri-nodejs-fill",
-        title: "NodeJS",
-      },
-      {
-        icon: "ri-reactjs-fill",
-        title: "ReactJS",
-      },
-      {
-        icon: "bx bxl-redux",
-        title: "Redux",
-      },
-      {
-        icon: "bx bx-code-curly",
-        title: "ExpressJS",
-      },
-      {
-        icon: "bx bxl-mongodb",
-        title: "MongoDB",
-      },
-    ];
+  document.title = "Portfolio | Skills";
+  const data = [
+    {
+      icon: "ri-html5-line",
+      title: "HTML5",
+    },
+    {
+      icon: "ri-css3-line",
+      title: "CSS3",
+    },
+    {
+      icon: "ri-javascript-line",
+      title: "Javascipt",
+    },
+    {
+      icon: "ri-nodejs-fill",
+      title: "NodeJS",
+    },
+    {
+      icon: "ri-reactjs-fill",
+      title: "ReactJS",
+    },
+    {
+      icon: "bx bxl-redux",
+      title: "Redux",
+    },
+    {
+      icon: "bx bx-code-curly",
+      title: "ExpressJS",
+    },
+    {
+      icon: "bx bxl-mongodb",
+      title: "MongoDB",
+    },
+  ];
   return (
     <div className="w-full py-20">
       <h1 className="text-center lg:text-6xl text-4xl font-bold text-white">

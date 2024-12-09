@@ -4,6 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  document.title = "Portfolio | Contact";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
