@@ -1,12 +1,12 @@
 import React from "react";
-import myImage from "/myImage.png";
+import image2 from "/image2.png";
 
 export default function About() {
   return (
     <div className="w-full py-20">
       <div className="max-w-screen-xl flex flex-col lg:flex-row lg:justify-around gap-10 items-center  mx-auto">
         <div className="lg:w-[30%] w-[80%] rounded-full overflow-hidden">
-          <img src={myImage} alt="" className="w-full object-cover" />
+          <img src={image2} alt="" className="w-full object-cover" />
         </div>
         <div className="text-white lg:w-1/2 w-full px-6 flex flex-col lg:items-start items-center">
           <h1 className="lg:text-6xl text-4xl font-bold">
