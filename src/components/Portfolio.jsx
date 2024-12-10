@@ -65,7 +65,7 @@ export default function Portfolio() {
           >
             <img
               src={item.image}
-              className="w-full h-full lg:object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               alt="Project Preview"
             />
             <div className="w-full h-0 bg-gradient-to-t to-[#d91657dc] from-[#eb5a00d5] absolute left-0 -bottom-36 flex flex-col justify-center items-center text-center px-5 transition-all duration-500 group-hover:h-full group-hover:bottom-0">
